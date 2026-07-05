@@ -1,0 +1,11 @@
+venv/
+node_modules/
+.env
+__pycache__/
+*.pyc
+logs/
+uploads/
+.ipynb_checkpoints/
+.next/
+dist/
+build/
