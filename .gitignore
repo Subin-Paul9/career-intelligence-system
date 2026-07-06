@@ -9,3 +9,18 @@ uploads/
 .next/
 dist/
 build/
+# Python
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# VS Code
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Environment
+.env.*
