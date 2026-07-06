@@ -1,26 +1,23 @@
-venv/
-node_modules/
-.env
-__pycache__/
-*.pyc
-logs/
-uploads/
-.ipynb_checkpoints/
-.next/
-dist/
-build/
 # Python
-*.pyo
-*.pyd
-.pytest_cache/
-.mypy_cache/
+venv/
+__pycache__/
+*.py[cod]
+
+# Environment
+.env
+
+# Logs
+logs/
+
+# Uploads
+uploads/
 
 # VS Code
 .vscode/
 
-# OS files
-Thumbs.db
-.DS_Store
+# Pytest
+.pytest_cache/
 
-# Environment
-.env.*
+# OS files
+.DS_Store
+Thumbs.db
