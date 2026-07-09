@@ -1,35 +1,48 @@
 from fastapi import FastAPI
 
-from app.config.settings import PROJECT_NAME
-from app.config.settings import APP_VERSION
+# Import API routers
+from app.routers import auth
+from app.routers import users
 
 app = FastAPI(
-
-    title=PROJECT_NAME,
-
-    version=APP_VERSION,
-
-    description="AI Powered Career Intelligence Platform"
-
+    title="Career Intelligence API",
+    description="Backend services for user authentication, profile management, and future AI-powered career intelligence modules.",
+    version="1.0.0"
 )
 
+
 @app.get("/")
-
-def root():
-
+def root() -> dict:
+    """
+    Root endpoint to verify that the backend server is running.
+    """
     return {
-
-        "message":"Backend Running Successfully"
-
+        "success": True,
+        "message": "Career Intelligence Backend is running successfully."
     }
 
 
 @app.get("/health")
-
-def health():
-
+def health_check() -> dict:
+    """
+    Health check endpoint.
+    Used to verify that the backend service is operational.
+    """
     return {
-
-        "status":"Healthy"
-
+        "status": "healthy"
     }
+
+
+# Authentication APIs
+app.include_router(
+    auth.router,
+    prefix="/api/auth",
+    tags=["Authentication"]
+)
+
+# User Management APIs
+app.include_router(
+    users.router,
+    prefix="/api/users",
+    tags=["Users"]
+)
