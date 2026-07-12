@@ -26,41 +26,24 @@ class UserUpdate(BaseModel):
     status_code=status.HTTP_200_OK
 )
 def get_profile(
-    current_token: dict = Depends(get_current_user),
-    db: Session = Depends(get_db)
+    current_user: User = Depends(get_current_user),
 ) -> dict:
     """
     Returns the authenticated user's profile.
     """
 
-    email = current_token.get("sub")
-
-    if not email:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid token"
-        )
-
-    user = db.query(User).filter(User.email == email).first()
-
-    if not user:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="User not found"
-        )
-
     return {
         "success": True,
         "message": "Profile retrieved successfully",
         "user": {
-            "id": user.id,
-            "first_name": user.first_name,
-            "last_name": user.last_name,
-            "email": user.email,
-            "phone": user.phone,
-            "role": user.role,
-            "is_active": user.is_active,
-            "created_at": user.created_at
+            "id": current_user.id,
+            "first_name": current_user.first_name,
+            "last_name": current_user.last_name,
+            "email": current_user.email,
+            "phone": current_user.phone,
+            "role": current_user.role,
+            "is_active": current_user.is_active,
+            "created_at": current_user.created_at
         }
     }
 
@@ -74,40 +57,24 @@ def get_profile(
 )
 def update_profile(
     updated_data: UserUpdate,
-    current_token: dict = Depends(get_current_user),
+    current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
 ) -> dict:
     """
     Updates the authenticated user's profile.
     """
 
-    email = current_token.get("sub")
-
-    if not email:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid token"
-        )
-
-    user = db.query(User).filter(User.email == email).first()
-
-    if not user:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="User not found"
-        )
-
     if updated_data.first_name is not None:
-        user.first_name = updated_data.first_name
+        current_user.first_name = updated_data.first_name
 
     if updated_data.last_name is not None:
-        user.last_name = updated_data.last_name
+        current_user.last_name = updated_data.last_name
 
     if updated_data.phone is not None:
-        user.phone = updated_data.phone
+        current_user.phone = updated_data.phone
 
     db.commit()
-    db.refresh(user)
+    db.refresh(current_user)
 
     return {
         "success": True,
@@ -123,31 +90,14 @@ def update_profile(
     status_code=status.HTTP_200_OK
 )
 def delete_profile(
-    current_token: dict = Depends(get_current_user),
+    current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
 ) -> dict:
     """
     Deactivates the authenticated user's account.
     """
 
-    email = current_token.get("sub")
-
-    if not email:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid token"
-        )
-
-    user = db.query(User).filter(User.email == email).first()
-
-    if not user:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="User not found"
-        )
-
-    # Soft Delete
-    user.is_active = False
+    current_user.is_active = False
 
     db.commit()
 

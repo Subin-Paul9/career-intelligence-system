@@ -1,13 +1,23 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 
 # Import API routers
 from app.routers import auth
 from app.routers import users
+from app.routers import resume
+
 
 app = FastAPI(
     title="Career Intelligence API",
     description="Backend services for user authentication, profile management, and future AI-powered career intelligence modules.",
     version="1.0.0"
+)
+
+# Serve uploaded resume files
+app.mount(
+    "/uploads",
+    StaticFiles(directory="uploads"),
+    name="uploads"
 )
 
 
@@ -45,4 +55,11 @@ app.include_router(
     users.router,
     prefix="/api/users",
     tags=["Users"]
+)
+
+# Resume Management APIs
+app.include_router(
+    resume.router,
+    prefix="/api/resume",
+    tags=["Resume"]
 )
