@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Software Engineer",
+        "description": "Designs, develops, tests and maintains software applications.",
+        "average_salary": "8-20 LPA",
+        "experience_level": "Entry Level"
+    },
+    {
+        "title": "Data Scientist",
+        "description": "Analyzes data and builds predictive models.",
+        "average_salary": "10-25 LPA",
+        "experience_level": "Mid Level"
+    },
+    {
+        "title": "AI Engineer",
+        "description": "Develops AI-powered applications using machine learning and deep learning.",
+        "average_salary": "12-30 LPA",
+        "experience_level": "Mid Level"
+    },
+    {
+        "title": "Machine Learning Engineer",
+        "description": "Builds, trains and deploys machine learning models.",
+        "average_salary": "10-28 LPA",
+        "experience_level": "Mid Level"
+    },
+    {
+        "title": "Cloud Engineer",
+        "description": "Designs and manages cloud infrastructure.",
+        "average_salary": "8-22 LPA",
+        "experience_level": "Entry Level"
+    },
+    {
+        "title": "DevOps Engineer",
+        "description": "Automates deployment and infrastructure management.",
+        "average_salary": "8-20 LPA",
+        "experience_level": "Entry Level"
+    },
+    {
+        "title": "Cyber Security Analyst",
+        "description": "Protects systems from cyber threats.",
+        "average_salary": "8-18 LPA",
+        "experience_level": "Entry Level"
+    },
+    {
+        "title": "UI/UX Designer",
+        "description": "Designs user interfaces and user experiences.",
+        "average_salary": "6-15 LPA",
+        "experience_level": "Entry Level"
+    },
+    {
+        "title": "Business Analyst",
+        "description": "Analyzes business requirements and proposes technical solutions.",
+        "average_salary": "7-18 LPA",
+        "experience_level": "Entry Level"
+    },
+    {
+        "title": "Data Analyst",
+        "description": "Collects, cleans and analyzes business data.",
+        "average_salary": "6-14 LPA",
+        "experience_level": "Entry Level"
+    }
+]

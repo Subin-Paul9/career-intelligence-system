@@ -1,0 +1,81 @@
+{
+    "Software Engineer": [
+        "Python",
+        "Git",
+        "SQL",
+        "Docker",
+        "FastAPI"
+    ],
+
+    "Data Scientist": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "Machine Learning"
+    ],
+
+    "AI Engineer": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Machine Learning",
+        "Deep Learning"
+    ],
+
+    "Machine Learning Engineer": [
+        "Python",
+        "TensorFlow",
+        "Docker",
+        "Git",
+        "Scikit-learn"
+    ],
+
+    "Cloud Engineer": [
+        "AWS",
+        "Docker",
+        "Linux",
+        "Git",
+        "Kubernetes"
+    ],
+
+    "DevOps Engineer": [
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "Git",
+        "CI/CD"
+    ],
+
+    "Cyber Security Analyst": [
+        "Python",
+        "Linux",
+        "Networking",
+        "OWASP",
+        "Wireshark"
+    ],
+
+    "UI/UX Designer": [
+        "Figma",
+        "Adobe XD",
+        "Prototyping",
+        "UI Design",
+        "UX Research"
+    ],
+
+    "Business Analyst": [
+        "SQL",
+        "Excel",
+        "Power BI",
+        "Communication",
+        "Requirement Analysis"
+    ],
+
+    "Data Analyst": [
+        "Python",
+        "SQL",
+        "Excel",
+        "Power BI",
+        "Tableau"
+    ]
+}

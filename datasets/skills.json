@@ -1,0 +1,78 @@
+{
+    "programming_languages": [
+        "Python",
+        "Java",
+        "C",
+        "C++",
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "Go",
+        "Rust"
+    ],
+
+    "frameworks": [
+        "FastAPI",
+        "Flask",
+        "Django",
+        "React",
+        "Angular",
+        "Vue",
+        "Spring Boot",
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-learn"
+    ],
+
+    "databases": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "SQLite",
+        "Oracle"
+    ],
+
+    "tools": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Kubernetes",
+        "Postman",
+        "Linux",
+        "AWS",
+        "CI/CD",
+        "Networking",
+        "Wireshark",
+        "Figma",
+        "Adobe XD",
+        "Excel",
+        "Power BI",
+        "Tableau"
+    ],
+
+    "soft_skills": [
+        "Leadership",
+        "Communication",
+        "Teamwork",
+        "Problem Solving",
+        "Time Management",
+        "Requirement Analysis"
+    ],
+
+    "certifications": [
+        "AWS Certified Cloud Practitioner",
+        "Microsoft Azure Fundamentals",
+        "Oracle Java Certification"
+    ],
+
+    "concepts": [
+        "Machine Learning",
+        "Deep Learning",
+        "Pandas",
+        "NumPy",
+        "OWASP",
+        "Prototyping",
+        "UI Design",
+        "UX Research"
+    ]
+}

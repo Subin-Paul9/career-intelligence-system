@@ -11,6 +11,10 @@ from app.database.base import Base
 from app.models.user import User
 from app.models.role import Role
 from app.models.resume import Resume
+from app.models.career import Career
+from app.models.skill import Skill
+from app.models.career_recommendation import CareerRecommendation
+from app.models.career_skill import CareerSkill
 
 config = context.config
 

@@ -28,6 +28,13 @@ The current implementation includes:
 - Resume Improvement Suggestions
 - Resume History
 - Resume Details
+- Career Recommendation Engine
+- Skill Extraction
+- Career Match Score Calculation
+- Missing Skill Detection
+- AI Career Summary Generation
+- Recommendation History
+- Career Details API
 - Secure REST APIs
 - PostgreSQL Database Integration
 
@@ -49,6 +56,11 @@ The primary objectives of this project are:
 - Predict placement readiness using Machine Learning.
 - Support multilingual career guidance.
 - Provide an analytics dashboard for tracking overall progress.
+- Recommend suitable careers based on extracted resume skills.
+- Calculate career match scores.
+- Detect missing skills required for recommended careers.
+- Generate AI-powered career summaries.
+- Store recommendation history for future reference.
 
 ---
 
@@ -80,6 +92,19 @@ The primary objectives of this project are:
 - Protected Resume APIs
 - Protected User APIs
 
+### Career Recommendation
+
+- Skill Extraction
+- Career Recommendation Engine
+- Career Match Score Calculation
+- Missing Skill Detection
+- AI Career Summary Generation
+- Recommendation History
+- Career Details
+
+### AI Features
+- Recommendation Engine
+
 ---
 
 ## 🚧 Planned Features
@@ -106,7 +131,6 @@ The primary objectives of this project are:
 - Multi-Agent AI
 - Multilingual AI Assistant
 - GitHub Portfolio Analyzer
-- Recommendation Engine
 
 ---
 
@@ -177,14 +201,56 @@ Career-Intelligence-System/
 │
 ├── backend/
 │   ├── alembic/
+│   │   ├── versions/
+│   │   ├── env.py
+│   │   ├── script.py.mako
+│   │   └── README
+│   │
 │   ├── app/
+│   │   ├── config/
+│   │   │   └── settings.py
+│   │   │
 │   │   ├── core/
+│   │   │   └── security.py
+│   │   │
 │   │   ├── database/
+│   │   │   ├── base.py
+│   │   │   └── database.py
+│   │   │
 │   │   ├── dependencies/
+│   │   │   └── auth_dependencies.py
+│   │   │
 │   │   ├── models/
+│   │   │   ├── user.py
+│   │   │   ├── resume.py
+│   │   │   ├── career.py
+│   │   │   ├── recommendation.py
+│   │   │   ├── skill.py
+│   │   │   ├── career_skill.py
+│   │   │   └── __init__.py
+│   │   │
 │   │   ├── routers/
+│   │   │   ├── auth.py
+│   │   │   ├── users.py
+│   │   │   ├── resume.py
+│   │   │   └── recommendation_router.py
+│   │   │
 │   │   ├── schemas/
+│   │   │   ├── user.py
+│   │   │   ├── resume.py
+│   │   │   ├── recommendation.py
+│   │   │   └── token.py
+│   │   │
+│   │   ├── services/
+│   │   │   ├── recommendation_service.py
+│   │   │   └── career_summary_service.py
+│   │   │
 │   │   ├── utils/
+│   │   │   ├── ats_analyzer.py
+│   │   │   ├── resume_parser.py
+│   │   │   ├── skill_extractor.py
+│   │   │   └── suggestion_generator.py
+│   │   │
 │   │   └── main.py
 │   │
 │   ├── uploads/
@@ -192,13 +258,23 @@ Career-Intelligence-System/
 │   ├── logs/
 │   ├── .env
 │   ├── alembic.ini
-│   └── requirements.txt
+│   ├── requirements.txt
+│   └── main.py
 │
-├── frontend/
 ├── datasets/
+│   ├── careers.csv
+│   ├── skills.json
+│   └── learning_resources.json
+│
 ├── docs/
 ├── notebooks/
 ├── scripts/
+│   ├── import_careers.py
+│   ├── import_skills.py
+│   ├── seed_database.py
+│   └── test_save_recommendation.py
+│
+├── frontend/
 ├── assets/
 ├── README.md
 └── .gitignore
@@ -328,7 +404,31 @@ Extract Resume Text
 Calculate ATS Score
         │
         ▼
-Generate Suggestions
+Generate Resume Suggestions
+        │
+        ▼
+Extract Skills
+        │
+        ▼
+Generate Career Recommendation
+        │
+        ▼
+Calculate Match Score
+        │
+        ▼
+Detect Missing Skills
+        │
+        ▼
+Generate AI Career Summary
+        │
+        ▼
+Save Recommendation
+        │
+        ▼
+Recommendation History
+        │
+        ▼
+Career Details
         │
         ▼
 Resume History
@@ -377,6 +477,40 @@ Delete Resume
 
 ---
 
+## Career Recommendation APIs
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/career/recommend` | Generate career recommendation |
+| GET | `/api/career/history` | View recommendation history |
+| GET | `/api/career/{career_id}` | View career details |
+
+# Career Recommendation Algorithm
+
+The recommendation engine performs the following steps:
+
+1. Parse the uploaded resume.
+2. Extract technical skills.
+3. Compare extracted skills with the required skills of every career.
+4. Calculate a match score.
+5. Detect missing skills.
+6. Select the highest matching career.
+7. Generate an AI-powered summary.
+8. Save the recommendation in PostgreSQL.
+
+# AI Summary Generation
+
+The recommendation engine automatically generates:
+
+- Recommended Career
+- Match Score
+- Strengths
+- Missing Skills
+- Learning Resources
+- Career Summary
+
+Each recommendation is stored in the database and can be retrieved through the Recommendation History API.
+
 # ATS Analysis
 
 The ATS engine evaluates resumes using multiple criteria, including:
@@ -400,20 +534,33 @@ The system:
 
 # Current Backend Features
 
+## Authentication
+
 - JWT Authentication
-- User Profile APIs
+
+## Resume Intelligence
+
 - Resume Upload
-- Resume Validation
 - Resume Parsing
-- Resume Text Extraction
-- ATS Score Calculation
+- ATS Score
 - Resume Suggestions
 - Resume History
-- Resume Details
-- Resume Delete
-- PostgreSQL Integration
-- Alembic Database Migrations
-- Swagger API Documentation
+
+## Career Recommendation
+
+- Skill Extraction
+- Career Matching
+- Match Score Calculation
+- Missing Skill Detection
+- AI Summary Generation
+- Recommendation History
+- Career Details API
+
+## Database
+
+- PostgreSQL
+- SQLAlchemy
+- Alembic
 
 ---
 
@@ -423,7 +570,7 @@ The system:
 - ✅ Phase 2 – Backend Foundation & FastAPI Setup
 - ✅ Phase 3 – Database Design & User Authentication
 - ✅ Phase 4 – Resume Management Module
-- 🚧 Phase 5 – Job Description Matching
+- ✅ Phase 5 – Career Recommendation Engine
 - ⏳ Phase 6 – AI Career Assistant
 - ⏳ Phase 7 – Recommendation Engine
 - ⏳ Phase 8 – AI Mock Interview
@@ -438,6 +585,17 @@ The system:
 ---
 
 # Testing
+
+## Career Recommendation
+
+- ✅ Skill Extraction
+- ✅ Career Recommendation
+- ✅ Match Score Calculation
+- ✅ Missing Skill Detection
+- ✅ Recommendation History
+- ✅ Career Details
+- ✅ Authentication
+- ✅ Error Handling
 
 The backend has been tested using **Swagger UI**.
 
@@ -472,19 +630,16 @@ The backend has been tested using **Swagger UI**.
 
 ## Completed
 
-- ✅ Authentication Module
-- ✅ User Profile Module
+- ✅ Authentication & Authorization Module
+- ✅ User Profile Management Module
 - ✅ Resume Management Module
-
-## In Progress
-
-- 🚧 Job Description Matching Module
+- ✅ ATS Analysis Module
+- ✅ Career Recommendation Engine
 
 ## Upcoming
 
 - AI Career Assistant
 - Resume-to-Job Matching
-- Recommendation Engine
 - AI Mock Interview
 - Placement Readiness Prediction
 - Multi-Agent AI
@@ -513,7 +668,15 @@ Potential future enhancements include:
 
 This repository is actively being developed as part of a **Final Year B.Tech Major Project**.
 
-The backend authentication and resume management modules are complete, and additional AI-powered features will be implemented in future development phases.
+The backend currently includes:
+
+- ✅ JWT Authentication
+- ✅ User Profile Management
+- ✅ Resume Intelligence
+- ✅ ATS Analysis
+- ✅ Career Recommendation Engine
+
+Future development will focus on AI Career Assistant, AI Mock Interview, Placement Readiness Prediction, Multi-Agent AI, and deployment.
 
 ---
 

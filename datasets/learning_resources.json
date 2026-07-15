@@ -1,0 +1,103 @@
+{
+    "python": {
+        "platform": "freeCodeCamp",
+        "resource": "Python Full Course",
+        "url": "https://www.freecodecamp.org/learn"
+    },
+
+    "fastapi": {
+        "platform": "FastAPI",
+        "resource": "Official FastAPI Documentation",
+        "url": "https://fastapi.tiangolo.com/"
+    },
+
+    "docker": {
+        "platform": "Docker",
+        "resource": "Official Docker Documentation",
+        "url": "https://docs.docker.com/"
+    },
+
+    "git": {
+        "platform": "Git",
+        "resource": "Pro Git Book",
+        "url": "https://git-scm.com/book/en/v2"
+    },
+
+    "sql": {
+        "platform": "SQLBolt",
+        "resource": "Interactive SQL Tutorial",
+        "url": "https://sqlbolt.com/"
+    },
+
+    "aws": {
+        "platform": "AWS",
+        "resource": "AWS Skill Builder",
+        "url": "https://explore.skillbuilder.aws/"
+    },
+
+    "kubernetes": {
+        "platform": "Kubernetes",
+        "resource": "Official Kubernetes Documentation",
+        "url": "https://kubernetes.io/docs/"
+    },
+
+    "linux": {
+        "platform": "Linux Journey",
+        "resource": "Linux Journey",
+        "url": "https://linuxjourney.com/"
+    },
+
+    "tensorflow": {
+        "platform": "TensorFlow",
+        "resource": "TensorFlow Tutorials",
+        "url": "https://www.tensorflow.org/tutorials"
+    },
+
+    "pytorch": {
+        "platform": "PyTorch",
+        "resource": "PyTorch Tutorials",
+        "url": "https://pytorch.org/tutorials/"
+    },
+
+    "numpy": {
+        "platform": "NumPy",
+        "resource": "NumPy Documentation",
+        "url": "https://numpy.org/doc/"
+    },
+
+    "pandas": {
+        "platform": "Pandas",
+        "resource": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/docs/"
+    },
+
+    "machine learning": {
+        "platform": "Coursera",
+        "resource": "Machine Learning Specialization",
+        "url": "https://www.coursera.org/"
+    },
+
+    "deep learning": {
+        "platform": "Coursera",
+        "resource": "Deep Learning Specialization",
+        "url": "https://www.coursera.org/"
+    },
+
+    "excel": {
+        "platform": "Microsoft Learn",
+        "resource": "Excel Training",
+        "url": "https://learn.microsoft.com/"
+    },
+
+    "power bi": {
+        "platform": "Microsoft Learn",
+        "resource": "Power BI Learning Path",
+        "url": "https://learn.microsoft.com/"
+    },
+
+    "tableau": {
+        "platform": "Tableau",
+        "resource": "Tableau Learning",
+        "url": "https://www.tableau.com/learn"
+    }
+}

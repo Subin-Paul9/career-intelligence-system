@@ -13,7 +13,8 @@ logs/
 uploads/
 
 # VS Code
-.vscode/
+.vscode/*
+!.vscode/settings.json
 
 # Pytest
 .pytest_cache/
