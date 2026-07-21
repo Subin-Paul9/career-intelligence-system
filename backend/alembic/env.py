@@ -8,13 +8,7 @@ from app.config.settings import DATABASE_URL
 from app.database.base import Base
 
 # Import all models so Alembic can detect them
-from app.models.user import User
-from app.models.role import Role
-from app.models.resume import Resume
-from app.models.career import Career
-from app.models.skill import Skill
-from app.models.career_recommendation import CareerRecommendation
-from app.models.career_skill import CareerSkill
+import app.models
 
 config = context.config
 

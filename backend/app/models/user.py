@@ -35,3 +35,10 @@ class User(Base):
         back_populates="user",
         cascade="all, delete-orphan"
     )
+
+    # One User -> Many Conversations
+    conversations = relationship(
+        "Conversation",
+        back_populates="user",
+        cascade="all, delete-orphan"
+    )
