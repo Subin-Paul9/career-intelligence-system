@@ -42,3 +42,10 @@ class User(Base):
         back_populates="user",
         cascade="all, delete-orphan"
     )
+
+    # Phase 7 - AI Mock Interview
+    interview_sessions = relationship(
+        "InterviewSession",
+        back_populates="user",
+        cascade="all, delete-orphan"
+    )

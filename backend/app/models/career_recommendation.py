@@ -5,6 +5,7 @@ from sqlalchemy import (
     DateTime,
     ForeignKey
 )
+from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 
 from app.database.base import Base
@@ -36,4 +37,13 @@ class CareerRecommendation(Base):
         DateTime(timezone=True),
         server_default=func.now(),
         nullable=False
+    )
+
+    # -------------------------
+    # Relationships
+    # -------------------------
+
+    interview_sessions = relationship(
+        "InterviewSession",
+        back_populates="career_recommendation"
     )

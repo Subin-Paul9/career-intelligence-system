@@ -13,6 +13,7 @@ from app.routers import users
 from app.routers import resume
 from app.routers import recommendation_router
 from app.routers import ai_assistant_router
+from app.routers import interview_router
 
 
 app = FastAPI(
@@ -122,4 +123,12 @@ app.include_router(
 # -------------------------
 app.include_router(
     ai_assistant_router.router,
+)
+
+
+# -------------------------
+# AI Mock Interview APIs
+# -------------------------
+app.include_router(
+    interview_router.router,
 )

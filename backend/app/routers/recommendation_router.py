@@ -96,7 +96,7 @@ def recommend_career(
     )
 
     # Save recommendation
-    save_recommendation(
+    saved = save_recommendation(
         db=db,
         user_id=current_user.id,
         resume_id=resume.id,

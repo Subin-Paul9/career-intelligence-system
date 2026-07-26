@@ -13,38 +13,55 @@
 
 # Overview
 
-The **AI-Powered Multi-Agent Career Intelligence System with Predictive Analytics** is a full-stack AI-powered platform designed to improve students' placement readiness through intelligent resume analysis, personalized career guidance, and predictive career analytics.
+The **AI-Powered Multi-Agent Career Intelligence System with Predictive Analytics** is a full-stack AI-powered platform designed to improve students' placement readiness through intelligent resume analysis, personalized career guidance, interview preparation, and predictive career analytics.
 
-The platform combines **Artificial Intelligence (AI)**, **Natural Language Processing (NLP)**, **Large Language Models (LLMs)**, **Machine Learning (ML)**, and **Predictive Analytics** to provide an end-to-end career preparation ecosystem.
+The platform combines:
+
+- Artificial Intelligence (AI)
+- Natural Language Processing (NLP)
+- Large Language Models (LLMs)
+- Machine Learning (ML)
+- Predictive Analytics
+
+to provide an end-to-end career preparation ecosystem.
 
 The system assists students throughout their placement journey by:
 
-- Analyzing resumes
-- Calculating ATS compatibility scores
-- Identifying skill gaps
-- Recommending suitable career paths
-- Suggesting learning resources
-- Generating personalized career roadmaps
-- Providing AI-powered career guidance using Google Gemini
-- Maintaining AI conversation history
-- Recommending projects and certifications
-- Predicting placement readiness (upcoming)
-- Conducting AI-powered mock interviews (upcoming)
+- Resume Analysis
+- ATS Compatibility Analysis
+- Resume Improvement Suggestions
+- Skill Extraction
+- Career Recommendation
+- Skill Gap Analysis
+- Learning Resource Recommendation
+- Personalized Career Roadmaps
+- AI Career Guidance using Google Gemini
+- AI Conversation Management
+- Project Recommendations
+- Certification Recommendations
+- AI-Powered Mock Interviews
+- AI Interview Answer Evaluation
+- Personalized Interview Reports
+- Interview Performance Analytics
+- Placement Readiness Prediction *(Upcoming)*
 
 ---
 
-## Current Backend Implementation
+# Current Backend Implementation
 
-### Authentication
+## 🔐 Authentication
 
 - JWT Authentication
 - User Registration & Login
+- Secure Password Hashing
 - User Profile Management
 - Protected APIs
 
-### Resume Intelligence
+---
 
-- Resume Upload & Validation
+## 📄 Resume Intelligence
+
+- Resume Upload
 - PDF & DOCX Parsing
 - Resume Text Extraction
 - ATS Score Analysis
@@ -52,7 +69,9 @@ The system assists students throughout their placement journey by:
 - Resume History
 - Resume Details
 
-### Career Intelligence
+---
+
+## 🎯 Career Intelligence
 
 - Skill Extraction
 - Career Recommendation Engine
@@ -61,11 +80,15 @@ The system assists students throughout their placement journey by:
 - AI Career Summary Generation
 - Recommendation History
 - Career Details
+- Learning Resource Recommendations
 
-### AI Career Assistant
+---
 
-- Google Gemini Integration
-- Personalized AI Career Assistant
+## 🤖 AI Career Assistant
+
+- Google Gemini 2.5 Flash Integration
+- Personalized AI Career Guidance
+- Context-Aware Responses
 - Conversation Management
 - Conversation History
 - Career Comparison
@@ -75,22 +98,39 @@ The system assists students throughout their placement journey by:
 - Learning Resource Recommendations
 - AI Feedback System
 
-### Security
+---
 
-- JWT Authentication
-- User-specific Data Isolation
-- Prompt Injection Filtering
-- API Key Protection
-- Input Validation
-- Rate Limiting
-- Output Sanitization
+## 🎤 AI Mock Interview
+
+- Personalized Interview Context
+- Dynamic Question Generation
+- Interview Session Management
+- AI Answer Evaluation
+- Technical Score Calculation
+- Communication Score Calculation
+- Problem-Solving Assessment
+- Confidence Assessment
+- Interview Report Generation
+- Interview History
+- Retry Interview Support
 
 ---
 
-Future phases will extend the platform with:
+## 🛡️ Security
+
+- JWT Authentication
+- User-specific Data Isolation
+- Prompt Injection Protection
+- API Key Protection
+- Input Validation
+- Output Sanitization
+- Rate Limiting
+
+---
+
+## 🚀 Future Modules
 
 - Resume-to-Job Matching
-- AI Mock Interview
 - Voice-Based Interview Analysis
 - AI Proctored Interview
 - Placement Readiness Prediction
@@ -106,20 +146,26 @@ Future phases will extend the platform with:
 
 The primary objectives of this project are:
 
-- Build an intelligent AI-powered career guidance platform.
-- Analyze resumes using NLP techniques.
+- Build an AI-powered career intelligence platform.
+- Analyze resumes using NLP.
 - Calculate ATS compatibility scores.
-- Recommend suitable career paths based on resume skills.
-- Detect technical and non-technical skill gaps.
-- Recommend personalized learning resources.
+- Recommend suitable career paths.
+- Detect skill gaps.
+- Recommend learning resources.
 - Generate AI-powered career summaries.
-- Provide an intelligent conversational AI Career Assistant.
+- Provide an intelligent AI Career Assistant.
 - Generate personalized career roadmaps.
-- Recommend projects and professional certifications.
+- Recommend projects and certifications.
 - Conduct AI-powered mock interviews.
+- Generate personalized interview questions.
+- Evaluate interview answers using Google Gemini.
+- Assess technical knowledge and communication skills.
+- Generate AI-powered interview reports.
 - Predict placement readiness using Machine Learning.
-- Provide analytics dashboards for career progress.
+- Provide career analytics dashboards.
 - Support future Multi-Agent AI collaboration.
+
+---
 
 # Key Features
 
@@ -128,9 +174,9 @@ The primary objectives of this project are:
 ### 🔐 Authentication & User Management
 
 - User Registration
-- User Login (JWT Authentication)
+- User Login
+- JWT Authentication
 - Secure Password Hashing (bcrypt)
-- JWT Token-Based Authorization
 - Protected REST APIs
 - User Profile Management
 - User-specific Data Access
@@ -141,7 +187,6 @@ The primary objectives of this project are:
 
 - Resume Upload
 - PDF & DOCX Validation
-- File Size Validation (5 MB)
 - Resume Parsing
 - Resume Text Extraction
 - ATS Score Analysis
@@ -160,19 +205,19 @@ The primary objectives of this project are:
 - Missing Skill Detection
 - AI Career Summary Generation
 - Recommendation History
-- Career Details API
+- Career Details
 - Learning Resource Recommendations
 
 ---
 
-### 🤖 AI Career Assistant (Google Gemini)
+### 🤖 AI Career Assistant
 
 - Google Gemini 2.5 Flash Integration
-- Personalized AI Career Guidance
-- Resume-Aware Conversations
-- Context-Aware Responses
+- Personalized Career Guidance
+- Resume-aware Conversations
+- Context-aware Responses
 - Career Comparison
-- Career Roadmap Generator
+- Career Roadmap Generation
 - Project Recommendations
 - Certification Recommendations
 - Learning Resource Recommendations
@@ -180,12 +225,41 @@ The primary objectives of this project are:
 
 ---
 
+### 🎤 AI Mock Interview
+
+- AI-Powered Mock Interview
+- Technical Interview Generation
+- Personalized Interview Context
+- Dynamic Question Generation
+- Multiple Difficulty Levels
+- Interview Session Management
+- AI Answer Evaluation
+- Technical Score Calculation
+- Communication Score Calculation
+- Problem-Solving Assessment
+- Confidence Assessment
+- Overall Interview Score
+- AI Feedback Generation
+- Strength Analysis
+- Weakness Analysis
+- Missing Topic Detection
+- Learning Resource Recommendations
+- Mentor Advice
+- Interview Report Generation
+- Interview History
+- Retry Interview Support
+- JWT-Protected APIs
+- Prompt Injection Protection
+- Rate Limiting
+
+---
+
 ### 💬 Conversation Management
 
-- Create New Conversations
-- Retrieve Conversation History
-- Conversation Persistence
-- User-specific Conversation Access
+- Create Conversations
+- Conversation History
+- Persistent Storage
+- User-specific Conversations
 - Delete Conversations
 
 ---
@@ -193,8 +267,7 @@ The primary objectives of this project are:
 ### 🛡️ Security
 
 - JWT Authentication
-- User-specific Resource Authorization
-- Prompt Injection Filtering
+- Prompt Injection Protection
 - API Key Protection
 - Input Validation
 - Output Sanitization
@@ -205,9 +278,9 @@ The primary objectives of this project are:
 
 ### ⚡ REST API
 
-- FastAPI-based REST Architecture
+- FastAPI REST Architecture
 - OpenAPI / Swagger Documentation
-- Pydantic Request Validation
+- Pydantic Validation
 - Structured JSON Responses
 - Standard HTTP Status Codes
 
@@ -215,13 +288,16 @@ The primary objectives of this project are:
 
 ### 🗄️ Database
 
-- PostgreSQL Database
+- PostgreSQL
 - SQLAlchemy ORM
-- Alembic Database Migrations
+- Alembic Migrations
 - Resume Storage
 - Recommendation History
 - Conversation History
-- Feedback Storage
+- Interview Sessions
+- Interview Questions
+- Interview Answers
+- Interview Reports
 
 ---
 
@@ -229,11 +305,11 @@ The primary objectives of this project are:
 
 ### 🎤 AI Interview Intelligence
 
-- AI Mock Interview
-- Adaptive Interview System
 - Voice-Based Interview Assessment
 - AI Proctored Interview
 - Behavioral Interview Analysis
+- Emotion & Speech Analysis
+- Interview Performance Analytics
 
 ---
 
@@ -253,7 +329,7 @@ The primary objectives of this project are:
 - Multi-Agent AI Collaboration
 - RAG-based Knowledge Retrieval
 - GitHub Portfolio Analyzer
-- LinkedIn Profile Analyzer
+- LinkedIn Portfolio Analyzer
 - AI Resume Builder
 - Multilingual AI Career Assistant
 
@@ -261,20 +337,22 @@ The primary objectives of this project are:
 
 ### ☁️ Deployment & Scalability
 
-- Docker Containerization
+- Docker
 - Cloud Deployment
 - CI/CD Pipeline
 - Production Monitoring
 - Logging & Performance Analytics
+
+---
 
 # Technology Stack
 
 ## 🎨 Frontend
 
 - Next.js
+- React
 - TypeScript
 - Tailwind CSS
-- React
 - Axios
 
 ---
@@ -300,14 +378,16 @@ The primary objectives of this project are:
 
 ## 🔐 Authentication & Security
 
-- JWT (JSON Web Tokens)
+- JWT
 - OAuth2 Password Bearer
 - Passlib
 - bcrypt
-- SlowAPI (Rate Limiting)
+- SlowAPI
 - Prompt Injection Protection
 - Input Validation
 - Output Sanitization
+- User Authorization
+- Secure Environment Variables
 
 ---
 
@@ -319,8 +399,8 @@ The primary objectives of this project are:
 
 Features:
 
-- PDF Resume Parsing
-- DOCX Resume Parsing
+- PDF Parsing
+- DOCX Parsing
 - Resume Text Extraction
 - Resume Validation
 
@@ -336,15 +416,21 @@ Features:
 - Resume Skill Extraction
 - ATS Score Analysis
 - AI Career Summary Generation
-- AI Career Assistant
 - Career Recommendation Engine
 - Career Match Score Calculation
 - Missing Skill Detection
-- Career Roadmap Generation
+- AI Career Assistant
 - Career Comparison
-- Learning Resource Recommendation
+- Career Roadmap Generation
 - Project Recommendation
 - Certification Recommendation
+- Learning Resource Recommendation
+- AI Mock Interview
+- Dynamic Interview Question Generation
+- AI Answer Evaluation
+- Interview Score Calculation
+- AI Feedback Generation
+- Interview Report Generation
 
 ---
 
@@ -354,20 +440,17 @@ Features:
 - Hugging Face Transformers
 - LangChain
 - CrewAI
-- Retrieval-Augmented Generation (RAG)
 
 ---
 
-## 📊 Machine Learning
-
-### Planned
+## 📊 Machine Learning (Planned)
 
 - Scikit-learn
 - XGBoost
 - Pandas
 - NumPy
 
-Future ML Features:
+Future Features:
 
 - Placement Readiness Prediction
 - Career Success Prediction
@@ -376,7 +459,7 @@ Future ML Features:
 
 ---
 
-## 👁️ Computer Vision *(Planned)*
+## 👁️ Computer Vision (Planned)
 
 - OpenCV
 - MediaPipe
@@ -390,7 +473,7 @@ Future Features:
 
 ---
 
-## 🎙️ Speech Processing *(Planned)*
+## 🎙️ Speech Processing (Upcoming Phase)
 
 - OpenAI Whisper
 
@@ -398,12 +481,13 @@ Future Features:
 
 - Speech-to-Text
 - Voice-Based Mock Interview
-- Pronunciation Analysis
 - Communication Skill Assessment
+- Pronunciation Analysis
+- Speech Fluency Analysis
 
 ---
 
-## 📈 Data Visualization *(Planned)*
+## 📈 Data Visualization (Planned)
 
 - Plotly
 - Matplotlib
@@ -422,14 +506,16 @@ Future Features:
 - Git
 - GitHub
 - VS Code
+- FastAPI
 - Swagger UI
 - Postman
 - pgAdmin
+- Alembic
 - Virtual Environment (venv)
 
 ---
 
-## ☁️ Deployment *(Planned)*
+## ☁️ Deployment (Planned)
 
 - Docker
 - Nginx
@@ -480,6 +566,10 @@ Career-Intelligence-System/
 │   │   │   ├── conversation.py
 │   │   │   ├── chat_history.py
 │   │   │   ├── assistant_feedback.py
+│   │   │   ├── interview.py
+│   │   │   ├── interview_question.py
+│   │   │   ├── interview_answer.py
+│   │   │   ├── interview_report.py
 │   │   │   └── __init__.py
 │   │   │
 │   │   ├── routers/
@@ -487,7 +577,8 @@ Career-Intelligence-System/
 │   │   │   ├── users.py
 │   │   │   ├── resume.py
 │   │   │   ├── recommendation_router.py
-│   │   │   └── ai_assistant_router.py
+│   │   │   ├── ai_assistant_router.py
+│   │   │   └── interview_router.py
 │   │   │
 │   │   ├── schemas/
 │   │   │   ├── user.py
@@ -495,7 +586,8 @@ Career-Intelligence-System/
 │   │   │   ├── resume.py
 │   │   │   ├── recommendation.py
 │   │   │   ├── assistant.py
-│   │   │   └── ai_assistant.py
+│   │   │   ├── ai_assistant.py
+│   │   │   └── interview.py
 │   │   │
 │   │   ├── services/
 │   │   │   ├── recommendation_service.py
@@ -506,7 +598,14 @@ Career-Intelligence-System/
 │   │   │   ├── prompt_injection_filter.py
 │   │   │   ├── response_formatter.py
 │   │   │   ├── roadmap_generator_service.py
-│   │   │   └── career_comparison_service.py
+│   │   │   ├── career_comparison_service.py
+│   │   │   ├── interview_context_builder.py
+│   │   │   ├── interview_prompt_builder.py
+│   │   │   ├── question_generator.py
+│   │   │   ├── answer_evaluator.py
+│   │   │   ├── interview_service.py
+│   │   │   ├── score_calculator.py
+│   │   │   └── report_generator.py
 │   │   │
 │   │   ├── utils/
 │   │   │   ├── ats_analyzer.py
@@ -539,13 +638,12 @@ Career-Intelligence-System/
 │   └── test_save_recommendation.py
 │
 ├── frontend/
-│
 ├── assets/
-│
 ├── README.md
-│
 └── .gitignore
 ```
+
+---
 
 # Installation & Setup
 
@@ -641,7 +739,7 @@ AI_CHAT_RATE_LIMIT=20/minute
 
 # Database Migration
 
-### Apply all migrations
+## Apply All Migrations
 
 ```bash
 alembic upgrade head
@@ -649,7 +747,7 @@ alembic upgrade head
 
 ---
 
-### Create a new migration
+## Create a New Migration
 
 ```bash
 alembic revision --autogenerate -m "migration_name"
@@ -663,7 +761,7 @@ alembic revision --autogenerate -m "migration_name"
 uvicorn main:app --reload
 ```
 
-The API will be available at:
+The backend server will start at:
 
 ```text
 http://127.0.0.1:8000
@@ -675,13 +773,15 @@ http://127.0.0.1:8000
 
 FastAPI automatically generates interactive API documentation.
 
-### Swagger UI
+## Swagger UI
 
 ```text
 http://127.0.0.1:8000/docs
 ```
 
-### ReDoc
+---
+
+## ReDoc
 
 ```text
 http://127.0.0.1:8000/redoc
@@ -691,15 +791,20 @@ http://127.0.0.1:8000/redoc
 
 # Google Gemini Configuration
 
-The AI Career Assistant uses **Google Gemini 2.5 Flash** for generating personalized career guidance.
+The AI modules use **Google Gemini 2.5 Flash** for:
+
+- AI Career Assistant
+- AI Mock Interview
+- Interview Answer Evaluation
+- AI Feedback Generation
 
 Before starting the backend:
 
-1. Generate a Gemini API key.
-2. Add the key to the `.env` file.
+1. Create a Gemini API Key.
+2. Add the API key to the `.env` file.
 3. Restart the FastAPI server.
 
-The Gemini client is initialized through:
+The Gemini client is initialized from:
 
 ```text
 backend/app/core/gemini.py
@@ -709,23 +814,22 @@ backend/app/core/gemini.py
 
 # Verify the Installation
 
-After starting the server:
+After starting the server, open:
 
-✅ Open Swagger UI
-
-```
+```text
 http://127.0.0.1:8000/docs
 ```
 
-Verify the following modules:
+Verify the following modules are available:
 
 - Authentication APIs
 - Resume APIs
 - Career Recommendation APIs
 - AI Career Assistant APIs
+- AI Mock Interview APIs
 
-If all endpoints are visible and accessible, the backend has been configured successfully.
-
+If all endpoints are visible, the backend has been configured successfully.
+---
 # System Workflows
 
 ## 📄 Resume Intelligence Workflow
@@ -808,17 +912,17 @@ Prompt Injection Filter
 Retrieve User Context
       │
       ▼
- ┌─────────────────────────────┐
- │ Resume Information          │
- │ ATS Score                   │
- │ Resume Suggestions          │
- │ Extracted Skills            │
- │ Career Recommendation       │
- │ Match Score                 │
- │ Missing Skills              │
- │ Learning Resources          │
- │ User Profile                │
- └─────────────────────────────┘
+┌───────────────────────────────┐
+│ Resume Information            │
+│ ATS Score                     │
+│ Resume Suggestions            │
+│ Extracted Skills              │
+│ Career Recommendation         │
+│ Career Match Score            │
+│ Missing Skills                │
+│ Learning Resources            │
+│ User Profile                  │
+└───────────────────────────────┘
       │
       ▼
 Career Comparison Service
@@ -827,16 +931,16 @@ Career Comparison Service
 Roadmap Generator
       │
       ▼
-Project Recommendations
+Project Recommendation
       │
       ▼
-Certification Recommendations
+Certification Recommendation
       │
       ▼
 Prompt Builder
       │
       ▼
-Google Gemini API
+Google Gemini 2.5 Flash
       │
       ▼
 AI Response Generation
@@ -845,7 +949,7 @@ AI Response Generation
 Response Formatter
       │
       ▼
-Save Chat History
+Save Conversation
       │
       ▼
 Return AI Response
@@ -855,27 +959,206 @@ Return AI Response
 
 # 🧠 AI Career Assistant Workflow Overview
 
-The AI Career Assistant follows the workflow below:
+The AI Career Assistant provides personalized career guidance using contextual information retrieved from the authenticated user's profile.
+
+Workflow:
 
 1. Authenticate the user using JWT.
 2. Validate the incoming request.
 3. Check for prompt injection attempts.
-4. Retrieve the user's career context from the database.
-5. Build a personalized AI prompt.
-6. Send the prompt to Google Gemini.
-7. Format the generated response.
-8. Store the conversation in PostgreSQL.
-9. Return the response to the user.
+4. Retrieve personalized career context.
+5. Build an optimized Gemini prompt.
+6. Generate an AI response.
+7. Format the response.
+8. Save the conversation.
+9. Return the response.
+
+---
+
+# 🎤 AI Mock Interview Workflow
+
+```text
+User Login
+      │
+      ▼
+JWT Authentication
+      │
+      ▼
+Start Interview
+      │
+      ▼
+Validate Career Recommendation
+      │
+      ▼
+Select Interview Type
+      │
+      ▼
+Select Difficulty Level
+      │
+      ▼
+Build Interview Context
+      │
+      ▼
+Generate AI Interview Questions
+      │
+      ▼
+Create Interview Session
+      │
+      ▼
+Return First Question
+      │
+      ▼
+Candidate Submits Answer
+      │
+      ▼
+Input Validation
+      │
+      ▼
+Prompt Injection Filter
+      │
+      ▼
+Google Gemini Evaluation
+      │
+      ▼
+Calculate Scores
+      │
+      ▼
+Save Answer & Feedback
+      │
+      ▼
+More Questions?
+      │
+ ┌──────┴──────┐
+ │             │
+ ▼             ▼
+Yes            No
+ │             │
+ ▼             ▼
+Next      Generate Report
+Question        │
+ │              ▼
+ └────────► Interview Feedback
+                │
+                ▼
+         Save Interview Report
+                │
+                ▼
+         Interview History
+                │
+                ▼
+         Return Final Result
+```
+
+---
+
+# 🎤 AI Mock Interview Overview
+
+The AI Mock Interview module simulates a personalized technical interview based on the user's recommended career path.
+
+Interview questions are dynamically generated using Google Gemini, while candidate responses are evaluated for technical knowledge, communication, confidence, and problem-solving ability.
+
+Workflow:
+
+1. Authenticate the user.
+2. Validate interview request.
+3. Retrieve career recommendation.
+4. Build interview context.
+5. Generate interview questions.
+6. Evaluate answers using Google Gemini.
+7. Calculate interview scores.
+8. Generate personalized feedback.
+9. Generate final interview report.
+10. Store interview history.
+
+---
+
+# 📄 Interview Report Generation Pipeline
+
+```text
+Interview Questions
+        │
+        ▼
+Candidate Answers
+        │
+        ▼
+Google Gemini Evaluation
+        │
+        ▼
+Score Calculation
+        │
+        ▼
+Strength Analysis
+        │
+        ▼
+Weakness Analysis
+        │
+        ▼
+Missing Topic Detection
+        │
+        ▼
+Learning Resource Recommendation
+        │
+        ▼
+Mentor Advice
+        │
+        ▼
+Interview Report Generation
+        │
+        ▼
+Store Report
+        │
+        ▼
+Return Final Feedback
+```
+
+---
+
+# 🔒 AI Interview Security Workflow
+
+Every interview request passes through multiple security layers before reaching the AI model.
+
+```text
+Interview Request
+        │
+        ▼
+JWT Authentication
+        │
+        ▼
+Interview Ownership Validation
+        │
+        ▼
+Request Validation
+        │
+        ▼
+Prompt Injection Filter
+        │
+        ▼
+Rate Limiting
+        │
+        ▼
+Interview Prompt Builder
+        │
+        ▼
+Google Gemini
+        │
+        ▼
+AI Evaluation
+        │
+        ▼
+Store Results
+```
 
 ---
 
 # 💡 Personalized AI Context
 
-Every AI response is generated using the authenticated user's data, including:
+Every AI response is generated using authenticated user data.
+
+The personalized context includes:
 
 - Resume Information
 - ATS Score
-- Resume Improvement Suggestions
+- Resume Suggestions
 - Extracted Skills
 - Recommended Career
 - Career Match Score
@@ -884,13 +1167,13 @@ Every AI response is generated using the authenticated user's data, including:
 - User Profile
 - Previous Conversation History
 
-This enables the AI Career Assistant to provide personalized career guidance instead of generic responses.
+This enables personalized career guidance rather than generic AI responses.
 
 ---
 
 # 🔒 AI Security Workflow
 
-Every chat request passes through multiple security layers before reaching the AI model.
+Every AI request passes through multiple security layers before reaching Google Gemini.
 
 ```text
 User Message
@@ -922,7 +1205,7 @@ Response Formatting
       ▼
 Return Response
 ```
-
+---
 # REST API Documentation
 
 The backend exposes RESTful APIs built using **FastAPI**. All protected endpoints require JWT authentication unless otherwise specified.
@@ -934,7 +1217,7 @@ The backend exposes RESTful APIs built using **FastAPI**. All protected endpoint
 | Method | Endpoint | Description |
 |---------|----------|-------------|
 | POST | `/auth/register` | Register a new user |
-| POST | `/auth/login` | Authenticate user and generate JWT token |
+| POST | `/auth/login` | Authenticate user and generate JWT access token |
 
 ---
 
@@ -942,9 +1225,9 @@ The backend exposes RESTful APIs built using **FastAPI**. All protected endpoint
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| GET | `/users/profile` | Retrieve logged-in user's profile |
-| PUT | `/users/profile` | Update user profile |
-| DELETE | `/users/profile` | Deactivate user account |
+| GET | `/users/profile` | Retrieve the logged-in user's profile |
+| PUT | `/users/profile` | Update the logged-in user's profile |
+| DELETE | `/users/profile` | Delete the logged-in user's account |
 
 ---
 
@@ -952,13 +1235,13 @@ The backend exposes RESTful APIs built using **FastAPI**. All protected endpoint
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| POST | `/resume/upload` | Upload resume |
-| GET | `/resume/parse/{resume_id}` | Parse uploaded resume |
+| POST | `/resume/upload` | Upload a resume |
+| GET | `/resume/parse/{resume_id}` | Parse an uploaded resume |
 | GET | `/resume/ats/{resume_id}` | Calculate ATS score |
 | GET | `/resume/suggestions/{resume_id}` | Generate resume improvement suggestions |
-| GET | `/resume/history` | Retrieve uploaded resume history |
+| GET | `/resume/history` | Retrieve resume history |
 | GET | `/resume/{resume_id}` | Retrieve resume details |
-| DELETE | `/resume/{resume_id}` | Delete uploaded resume |
+| DELETE | `/resume/{resume_id}` | Delete a resume |
 
 ---
 
@@ -967,8 +1250,8 @@ The backend exposes RESTful APIs built using **FastAPI**. All protected endpoint
 | Method | Endpoint | Description |
 |---------|----------|-------------|
 | POST | `/api/career/recommend` | Generate career recommendation |
-| GET | `/api/career/history` | View recommendation history |
-| GET | `/api/career/{career_id}` | View career details |
+| GET | `/api/career/history` | Retrieve recommendation history |
+| GET | `/api/career/{career_id}` | Retrieve career details |
 
 ---
 
@@ -999,9 +1282,9 @@ The backend exposes RESTful APIs built using **FastAPI**. All protected endpoint
 |---------|----------|-------------|
 | GET | `/api/assistant/questions` | Retrieve common career questions |
 | GET | `/api/assistant/projects` | Get personalized project recommendations |
-| GET | `/api/assistant/resources` | Get learning resource recommendations |
+| GET | `/api/assistant/resources` | Get personalized learning resources |
 | GET | `/api/assistant/certifications` | Get certification recommendations |
-| GET | `/api/assistant/roadmap` | Generate personalized career roadmap |
+| GET | `/api/assistant/roadmap` | Generate a personalized career roadmap |
 | GET | `/api/assistant/compare-careers` | Compare two career paths |
 
 ---
@@ -1010,18 +1293,75 @@ The backend exposes RESTful APIs built using **FastAPI**. All protected endpoint
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| POST | `/api/assistant/feedback` | Submit AI response feedback |
+| POST | `/api/assistant/feedback` | Submit AI assistant feedback |
+
+---
+
+# 🎤 AI Mock Interview APIs
+
+All interview APIs require JWT authentication.
+
+## Interview Session Management
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/interview/start` | Start a new AI mock interview |
+| POST | `/api/interview/retry/{session_id}` | Retry an existing interview |
+| GET | `/api/interview/history` | Retrieve interview history |
+| GET | `/api/interview/{session_id}` | Retrieve interview details |
+| DELETE | `/api/interview/{session_id}` | Delete an interview session |
+
+---
+
+## Interview Question APIs
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/api/interview/question/{session_id}` | Retrieve the current interview question |
+
+---
+
+## Interview Answer APIs
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/interview/answer` | Submit an interview answer for AI evaluation |
+
+---
+
+## Interview Report APIs
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/interview/finish/{session_id}` | Finish the interview and generate the final report |
+| GET | `/api/interview/{session_id}` | Retrieve interview report, questions, answers, and feedback |
+
+---
+
+## Interview Features
+
+| Feature | Description |
+|----------|-------------|
+| AI Question Generation | Dynamically generates interview questions using Google Gemini |
+| Personalized Interview Context | Builds questions using the user's recommended career |
+| AI Answer Evaluation | Evaluates interview answers using Google Gemini |
+| Interview Score Calculation | Calculates technical, communication, confidence, and problem-solving scores |
+| AI Feedback Generation | Generates personalized interview feedback |
+| Interview Report Generation | Produces a comprehensive interview performance report |
+| Interview History | Stores interview sessions for future review |
+| Security | JWT authentication, prompt injection protection, ownership validation, and rate limiting |
 
 ---
 
 # 🔒 Authentication
 
-The following endpoints require a valid JWT access token:
+The following modules require a valid JWT access token:
 
 - User Profile APIs
 - Resume APIs
 - Career Recommendation APIs
 - AI Career Assistant APIs
+- AI Mock Interview APIs
 
 JWT tokens must be included in the request header.
 
@@ -1053,21 +1393,19 @@ http://127.0.0.1:8000/redoc
 
 # 📦 API Response Format
 
-Successful responses follow a structured JSON format.
-
-Example:
+Successful responses follow the structure below:
 
 ```json
 {
-    "success": true,
-    "message": "Operation completed successfully.",
-    "data": {
-        ...
-    }
+  "success": true,
+  "message": "Operation completed successfully.",
+  "data": {
+    ...
+  }
 }
 ```
 
-Validation and application errors return appropriate HTTP status codes with descriptive error messages.
+Validation and application errors return appropriate HTTP status codes together with descriptive error messages.
 
 ---
 
@@ -1090,27 +1428,25 @@ Validation and application errors return appropriate HTTP status codes with desc
 
 ## 🎯 Career Recommendation Engine
 
-The Career Recommendation Engine analyzes an uploaded resume and recommends the most suitable career path based on the user's technical skills and profile.
+The Career Recommendation Engine analyzes uploaded resumes and recommends the most suitable career path based on the user's technical skills, qualifications, and career interests.
 
-The recommendation process consists of the following stages:
+The recommendation pipeline consists of:
 
-1. Upload and validate the resume.
-2. Parse PDF or DOCX files.
-3. Extract resume text.
-4. Identify technical skills.
-5. Compare extracted skills with the career database.
-6. Calculate career match scores.
-7. Detect missing skills.
-8. Recommend the best matching career.
-9. Generate an AI-powered career summary.
-10. Recommend learning resources.
-11. Store recommendation history.
+1. Resume Upload
+2. Resume Parsing
+3. Skill Extraction
+4. Career Matching
+5. Match Score Calculation
+6. Missing Skill Detection
+7. AI Career Summary Generation
+8. Learning Resource Recommendation
+9. Recommendation Storage
 
 ---
 
 ## 📄 ATS Analysis
 
-The ATS (Applicant Tracking System) Analyzer evaluates resumes using multiple criteria commonly used by recruitment systems.
+The ATS (Applicant Tracking System) Analyzer evaluates resumes using industry-standard recruitment criteria.
 
 The analysis includes:
 
@@ -1118,17 +1454,16 @@ The analysis includes:
 - Professional Summary
 - Education
 - Technical Skills
-- Work Experience
 - Projects
 - Certifications
-- Achievements
+- Work Experience
 - Resume Formatting
 
 The ATS engine automatically:
 
 - Extracts resume text
-- Calculates an ATS compatibility score
-- Identifies weak sections
+- Calculates ATS compatibility score
+- Detects weak sections
 - Generates personalized resume improvement suggestions
 
 ---
@@ -1137,30 +1472,115 @@ The ATS engine automatically:
 
 The AI Career Assistant provides personalized career guidance using **Google Gemini 2.5 Flash**.
 
-Unlike a general chatbot, the assistant generates responses using the authenticated user's career data, making every response personalized.
+Unlike a traditional chatbot, the assistant retrieves personalized career context before generating responses.
 
-The assistant can help users with:
+Features include:
 
 - Career Guidance
 - Resume Improvement
 - ATS Score Explanation
 - Skill Gap Analysis
 - Career Comparison
-- Learning Recommendations
+- Personalized Roadmaps
 - Project Recommendations
 - Certification Recommendations
-- Career Roadmap Generation
+
+---
+
+## 🎤 AI Mock Interview
+
+The AI Mock Interview module simulates personalized technical interviews based on the user's recommended career.
+
+Features include:
+
+- Personalized Technical Interviews
+- Dynamic Question Generation
+- AI-Based Answer Evaluation
+- Technical Skill Assessment
+- Communication Assessment
+- Problem-Solving Assessment
+- Confidence Assessment
+- Overall Performance Evaluation
+- AI Feedback Generation
+- Interview Reports
+- Interview History
+
+---
+
+## 📝 Interview Context Generation
+
+Before generating interview questions, the system collects personalized information from multiple modules.
+
+The context includes:
+
+- User Profile
+- Resume Information
+- Extracted Skills
+- Career Recommendation
+- Career Match Score
+- Missing Skills
+- Learning Resources
+- Interview Type
+- Difficulty Level
+
+This enables Google Gemini to generate highly personalized interview questions.
+
+---
+
+## 📊 Interview Evaluation Engine
+
+Every submitted answer is evaluated using Google Gemini.
+
+Evaluation criteria include:
+
+- Technical Knowledge
+- Communication Skills
+- Problem-Solving Ability
+- Confidence
+- Overall Performance
+
+Generated outputs:
+
+- Technical Score
+- Communication Score
+- Problem-Solving Score
+- Confidence Score
+- Overall Score
+- Strengths
+- Weaknesses
+- Missing Topics
+- Learning Resources
+- Mentor Advice
+
+---
+
+## 📄 Interview Report Generation
+
+After completing an interview, the system generates a comprehensive performance report containing:
+
+- Interview Summary
+- Question-wise Evaluation
+- Technical Score
+- Communication Score
+- Problem-Solving Score
+- Confidence Score
+- Overall Score
+- Strengths
+- Weaknesses
+- Missing Topics
+- Learning Resources
+- Mentor Advice
 
 ---
 
 ## 🧠 Personalized Context Generation
 
-Before generating an AI response, the system retrieves information from multiple modules.
+Before generating AI responses, the assistant retrieves personalized user information.
 
-The personalized context includes:
+The context includes:
 
 - User Profile
-- Resume Information
+- Resume
 - ATS Score
 - Resume Suggestions
 - Extracted Skills
@@ -1170,92 +1590,75 @@ The personalized context includes:
 - Learning Resources
 - Previous Conversation History
 
-This context enables the AI Career Assistant to provide accurate and personalized responses instead of generic advice.
-
 ---
 
 ## ✨ Google Gemini Integration
 
-The AI Career Assistant uses **Google Gemini 2.5 Flash** as its Large Language Model (LLM).
+Google Gemini powers:
 
-Gemini is responsible for:
+- AI Career Assistant
+- AI Mock Interview
+- AI Answer Evaluation
+- Career Guidance
+- Interview Feedback
+- Career Roadmaps
+- Project Recommendations
+- Certification Recommendations
 
-- Understanding user questions
-- Generating natural language responses
-- Explaining career recommendations
-- Suggesting projects
-- Recommending certifications
-- Building career roadmaps
-- Answering resume-related questions
-
-The backend securely communicates with Gemini using an API key stored in environment variables.
+The backend securely communicates with Gemini using environment variables.
 
 ---
 
 ## 💬 Conversation Management
 
-Every interaction with the AI Career Assistant is stored in PostgreSQL.
-
-The conversation system supports:
+Conversation management supports:
 
 - Conversation Creation
+- Persistent Storage
 - Conversation History
-- Persistent Chat Storage
-- User-specific Conversations
+- User-specific Access
 - Conversation Deletion
 - AI Feedback Collection
-
-This allows users to continue previous discussions without losing context.
 
 ---
 
 ## 🛣️ Career Roadmap Generator
 
-The Career Roadmap Generator creates a personalized roadmap based on the user's current skills and recommended career.
-
-The roadmap considers:
+The roadmap generator creates personalized learning paths using:
 
 - Existing Skills
 - Missing Skills
-- Career Recommendation
+- Recommended Career
 - Learning Resources
-- Recommended Certifications
-- Suggested Projects
-
-The generated roadmap helps users progress from their current skill level to their target career.
+- Certifications
+- Recommended Projects
 
 ---
 
 ## 💡 Project Recommendation Engine
 
-The system recommends projects that align with the user's target career and current skill set.
+Projects are recommended based on:
 
-Recommendations are generated using:
-
-- Recommended Career
+- Career Recommendation
 - Existing Skills
 - Missing Skills
 - Skill Gap Analysis
-
-These projects help users build practical experience and strengthen their portfolio.
 
 ---
 
 ## 🎓 Certification Recommendation Engine
 
-The Certification Recommendation Engine suggests certifications relevant to the user's career goals.
+Certification recommendations are generated using:
 
-Recommendations are based on:
-
-- Recommended Career
+- Career Recommendation
+- Current Skills
 - Missing Skills
-- Current Skill Level
 
-Examples include certifications from platforms such as:
+Supported platforms include:
 
 - AWS
-- Google
 - Microsoft
+- Google
 - Coursera
 - Udemy
 
@@ -1263,33 +1666,28 @@ Examples include certifications from platforms such as:
 
 ## 🛡️ AI Security
 
-Multiple security mechanisms protect the AI Career Assistant.
-
 ### Authentication
 
 - JWT Authentication
-- User-specific Data Access
+- User-specific Authorization
 
 ### AI Security
 
-- Prompt Injection Filtering
+- Prompt Injection Protection
 - Input Validation
 - Output Sanitization
 - Rate Limiting
 
 ### Data Security
 
-- Protected API Keys
 - Secure Environment Variables
+- Protected API Keys
 - Conversation Ownership Validation
-
-These measures ensure secure, reliable, and personalized AI interactions.
+- Interview Ownership Validation
 
 ---
 
 ## ⚙️ AI Response Generation Pipeline
-
-Every AI response follows the pipeline below:
 
 ```text
 User Message
@@ -1330,6 +1728,8 @@ Save Conversation
       ▼
 Return Response
 ```
+
+---
 
 # Current Backend Features
 
@@ -1374,9 +1774,8 @@ Return Response
 
 - Google Gemini Integration
 - Personalized AI Career Assistant
-- Resume-aware AI Responses
+- Resume-aware Responses
 - Conversation Management
-- Conversation History
 - Career Comparison
 - Career Roadmap Generation
 - Project Recommendations
@@ -1386,15 +1785,34 @@ Return Response
 
 ---
 
+## 🎤 AI Mock Interview
+
+- Interview Session Management
+- Personalized Interview Context
+- Dynamic Question Generation
+- AI Answer Evaluation
+- Technical Score Calculation
+- Communication Score Calculation
+- Problem-Solving Assessment
+- Confidence Assessment
+- Overall Interview Score
+- Interview Report Generation
+- Interview History
+- Retry Interview
+- JWT-Protected APIs
+- Prompt Injection Protection
+- Rate Limiting
+
+---
+
 ## 🛡️ Security
 
 - JWT Authentication
-- Prompt Injection Filtering
-- API Key Protection
+- Prompt Injection Protection
 - Input Validation
-- Rate Limiting
 - Output Sanitization
-- User-specific Data Isolation
+- Rate Limiting
+- User-specific Resource Authorization
 
 ---
 
@@ -1402,11 +1820,14 @@ Return Response
 
 - PostgreSQL
 - SQLAlchemy ORM
-- Alembic Database Migrations
+- Alembic Migrations
 - Resume Storage
 - Recommendation History
 - Conversation History
-- Feedback Storage
+- Interview Sessions
+- Interview Questions
+- Interview Answers
+- Interview Reports
 
 ---
 
@@ -1420,15 +1841,15 @@ Return Response
 - ✅ Phase 4 – Resume Intelligence & ATS Analysis
 - ✅ Phase 5 – Career Recommendation Engine
 - ✅ Phase 6 – AI Career Assistant
+- ✅ Phase 7 – AI Mock Interview
 
 ---
 
 ## 🚧 Upcoming Phases
 
-- ⏳ Phase 7 – Resume-to-Job Matching
-- ⏳ Phase 8 – AI Mock Interview
-- ⏳ Phase 9 – Voice-Based Interview Analysis
-- ⏳ Phase 10 – AI Proctored Interview
+- ⏳ Phase 8 – Voice-Based Interview Analysis
+- ⏳ Phase 9 – AI Proctored Interview
+- ⏳ Phase 10 – Resume-to-Job Matching
 - ⏳ Phase 11 – Placement Readiness Prediction
 - ⏳ Phase 12 – Analytics Dashboard
 - ⏳ Phase 13 – GitHub Portfolio Analyzer
@@ -1439,13 +1860,13 @@ Return Response
 
 # Testing
 
-The backend has been thoroughly tested using **Swagger UI**, **Postman**, and manual integration testing.
+The backend has been tested using **Swagger UI**, **Postman**, and integration testing.
 
 ## Authentication
 
 - ✅ User Registration
 - ✅ User Login
-- ✅ JWT Authorization
+- ✅ JWT Authentication
 - ✅ Protected API Access
 
 ---
@@ -1454,10 +1875,7 @@ The backend has been thoroughly tested using **Swagger UI**, **Postman**, and ma
 
 - ✅ PDF Upload
 - ✅ DOCX Upload
-- ✅ Invalid File Validation
-- ✅ File Size Validation
 - ✅ Resume Parsing
-- ✅ Resume Text Extraction
 - ✅ ATS Score Analysis
 - ✅ Resume Suggestions
 - ✅ Resume History
@@ -1466,56 +1884,60 @@ The backend has been thoroughly tested using **Swagger UI**, **Postman**, and ma
 
 ---
 
-## Career Recommendation Engine
+## Career Recommendation
 
 - ✅ Skill Extraction
 - ✅ Career Recommendation
-- ✅ Career Match Score Calculation
+- ✅ Match Score Calculation
 - ✅ Missing Skill Detection
-- ✅ AI Career Summary Generation
+- ✅ AI Career Summary
 - ✅ Recommendation History
-- ✅ Career Details API
-- ✅ Learning Resource Recommendations
 
 ---
 
 ## AI Career Assistant
 
-- ✅ Conversation Creation
-- ✅ Conversation History
+- ✅ Conversation Management
 - ✅ AI Chat
 - ✅ Personalized Responses
 - ✅ Career Comparison
-- ✅ Career Roadmap Generation
+- ✅ Career Roadmap
 - ✅ Project Recommendations
 - ✅ Certification Recommendations
-- ✅ Learning Resource Recommendations
-- ✅ AI Feedback Submission
+- ✅ Learning Resources
+- ✅ AI Feedback
 
 ---
 
-## Security
+## 🎤 AI Mock Interview
+
+- ✅ Start Interview
+- ✅ Dynamic Question Generation
+- ✅ Submit Interview Answer
+- ✅ AI Answer Evaluation
+- ✅ Interview Score Calculation
+- ✅ Interview Report Generation
+- ✅ Interview History
+- ✅ Retry Interview
+- ✅ Invalid Career Validation
+- ✅ Invalid Difficulty Validation
+- ✅ Empty Answer Validation
+- ✅ Unauthorized Access Protection
+- ✅ Cross-user Protection
+- ✅ Prompt Injection Protection
+- ✅ Rate Limiting
+- ✅ Gemini Failure Handling (Documented)
+
+---
+
+## 🛡️ Security
 
 - ✅ JWT Authentication
-- ✅ User-specific Resource Protection
-- ✅ Prompt Injection Filtering
+- ✅ Prompt Injection Protection
 - ✅ Rate Limiting
 - ✅ Input Validation
 - ✅ Output Sanitization
-- ✅ API Key Protection
-
----
-
-## Error Handling
-
-- ✅ Invalid JWT
-- ✅ Missing Resume
-- ✅ Missing Career Recommendation
-- ✅ Empty Messages
-- ✅ Long Prompt Handling
-- ✅ Gemini API Quota Handling (HTTP 429)
-- ✅ Invalid Requests
-- ✅ Validation Errors
+- ✅ User Authorization
 
 ---
 
@@ -1524,29 +1946,29 @@ The backend has been thoroughly tested using **Swagger UI**, **Postman**, and ma
 ## ✅ Completed
 
 - Authentication & Authorization
-- Resume Intelligence Module
-- ATS Analysis Module
+- Resume Intelligence
+- ATS Analysis
 - Career Recommendation Engine
-- AI Career Assistant Backend
+- AI Career Assistant
+- AI Mock Interview
 - Google Gemini Integration
 - Security Enhancements
 - REST API Development
-- Database Design & Integration
+- Database Design
 
 ---
 
 ## 🚧 In Progress
 
-- Frontend Integration for AI Career Assistant
+- Frontend Development
 
 ---
 
 ## 📅 Upcoming
 
-- Resume-to-Job Matching
-- AI Mock Interview
-- Voice-Based Interview
+- Voice-Based Interview Analysis
 - AI Proctored Interview
+- Resume-to-Job Matching
 - Placement Readiness Prediction
 - Analytics Dashboard
 - GitHub Portfolio Analyzer
@@ -1557,22 +1979,19 @@ The backend has been thoroughly tested using **Swagger UI**, **Postman**, and ma
 
 # Future Scope
 
-The project is designed to evolve into a complete AI-powered placement platform.
-
-Planned enhancements include:
+Future enhancements include:
 
 - AI Resume Builder
 - Resume-to-Job Matching
 - Company Recruitment Portal
-- LinkedIn Profile Analyzer
 - GitHub Portfolio Analyzer
-- AI Mock Interview
+- LinkedIn Portfolio Analyzer
 - Voice-Based Interview Analysis
 - AI Proctored Interview
 - Placement Readiness Prediction
 - Analytics Dashboard
 - Multi-Agent AI Collaboration
-- AI Mentor Recommendation System
+- AI Mentor Recommendation
 - Cloud Deployment
 - Mobile Application (Android & iOS)
 
@@ -1582,19 +2001,28 @@ Planned enhancements include:
 
 🚧 **Actively Under Development**
 
-The backend is currently completed through **Phase 6 – AI Career Assistant**.
+**Completed through Phase 7 – AI Mock Interview**
 
 ### Completed Modules
 
-- Authentication & Authorization
+- Authentication
 - Resume Intelligence
 - ATS Analysis
-- Career Recommendation Engine
+- Career Recommendation
 - AI Career Assistant
+- AI Mock Interview
 - Google Gemini Integration
 - Security & Rate Limiting
 
-Future development will focus on AI Interview modules, Predictive Analytics, Multi-Agent AI, and production deployment.
+### Upcoming Modules
+
+- Voice-Based Interview Analysis
+- AI Proctored Interview
+- Resume-to-Job Matching
+- Placement Readiness Prediction
+- Analytics Dashboard
+- Multi-Agent AI
+- Cloud Deployment
 
 ---
 
@@ -1602,14 +2030,12 @@ Future development will focus on AI Interview modules, Predictive Analytics, Mul
 
 Contributions, suggestions, and feedback are welcome.
 
-If you would like to contribute:
-
 1. Fork the repository.
 2. Create a feature branch.
 3. Commit your changes.
 4. Submit a Pull Request.
 
-Please ensure that new code follows the existing project structure and coding standards.
+Please ensure that all new code follows the existing project architecture and coding standards.
 
 ---
 
@@ -1625,8 +2051,8 @@ Final Year Major Project
 
 # License
 
-This project has been developed for **academic, educational, and research purposes**.
+This project has been developed for academic, educational, and research purposes.
 
-Copyright © 2026 Subin Paul.
+**Copyright © 2026 Subin Paul**
 
 All Rights Reserved.
