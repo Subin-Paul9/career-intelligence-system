@@ -2,19 +2,17 @@ from sqlalchemy import (
     Column,
     Integer,
     Float,
-    Text,
     DateTime,
     ForeignKey,
 )
-
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 
 from app.database.base import Base
 
 
-class InterviewAnswer(Base):
-    __tablename__ = "interview_answers"
+class VoiceScore(Base):
+    __tablename__ = "voice_scores"
 
     id = Column(
         Integer,
@@ -22,68 +20,60 @@ class InterviewAnswer(Base):
         index=True,
     )
 
-    question_id = Column(
+    transcript_id = Column(
         Integer,
         ForeignKey(
-            "interview_questions.id",
+            "speech_transcripts.id",
             ondelete="CASCADE",
         ),
         nullable=False,
         unique=True,
     )
 
-    answer = Column(
-        Text,
-        nullable=False,
-    )
-
-    ai_feedback = Column(
-        Text,
-        nullable=True,
-    )
+    # =====================================================
+    # Score Components
+    # =====================================================
 
     technical_score = Column(
         Float,
-        nullable=True,
+        nullable=False,
     )
 
     communication_score = Column(
         Float,
-        nullable=True,
+        nullable=False,
+    )
+
+    fluency_score = Column(
+        Float,
+        nullable=False,
     )
 
     confidence_score = Column(
         Float,
-        nullable=True,
+        nullable=False,
     )
+
+    # =====================================================
+    # Final Score
+    # =====================================================
 
     overall_score = Column(
         Float,
-        nullable=True,
-    )
-
-    response_time = Column(
-        Integer,
-        nullable=True,
+        nullable=False,
     )
 
     created_at = Column(
         DateTime(timezone=True),
         server_default=func.now(),
+        nullable=False,
     )
 
     # =====================================================
     # Relationships
     # =====================================================
 
-    question = relationship(
-        "InterviewQuestion",
-        back_populates="answer",
-    )
-
-    audio = relationship(
-        "InterviewAudio",
-        back_populates="answer",
-        uselist=False,
-        cascade="all, delete-orphan",
+    transcript = relationship(
+        "SpeechTranscript",
+        back_populates="voice_score",
     )

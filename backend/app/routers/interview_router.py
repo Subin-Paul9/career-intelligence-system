@@ -196,7 +196,7 @@ def interview_history(
 # =====================================================
 
 @router.get(
-    "/{session_id}",
+    "/session/{session_id}",
     response_model=InterviewDetailResponse,
     summary="Interview Details",
 )
@@ -222,7 +222,7 @@ def interview_details(
 # =====================================================
 
 @router.delete(
-    "/{session_id}",
+    "/session/{session_id}",
     response_model=DeleteInterviewResponse,
     summary="Delete Interview",
 )

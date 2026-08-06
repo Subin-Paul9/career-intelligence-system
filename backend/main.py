@@ -6,6 +6,7 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
 
 from app.core.rate_limiter import limiter
+from app.core.file_manager import initialize_upload_directories
 
 # Import API routers
 from app.routers import auth
@@ -14,6 +15,7 @@ from app.routers import resume
 from app.routers import recommendation_router
 from app.routers import ai_assistant_router
 from app.routers import interview_router
+from app.routers import voice_interview_router
 
 
 app = FastAPI(
@@ -21,6 +23,11 @@ app = FastAPI(
     description="Backend services for user authentication, profile management, and AI-powered career intelligence modules.",
     version="1.0.0",
 )
+
+# -------------------------
+# Initialize Upload Directories
+# -------------------------
+initialize_upload_directories()
 
 # -------------------------
 # Rate Limiter Configuration
@@ -131,4 +138,12 @@ app.include_router(
 # -------------------------
 app.include_router(
     interview_router.router,
+)
+
+
+# -------------------------
+# Voice Interview APIs
+# -------------------------
+app.include_router(
+    voice_interview_router.router,
 )
